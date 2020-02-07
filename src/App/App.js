@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.scss';
 import Nav from '../Nav/Nav';
 import ContactDash from '../ContactDash/ContactDash';
 
-function App() {
-  return (
-    <section className="main">
-      <Nav />
-      <ContactDash />
-    </section>
-  );
-}
+export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      contacts: []
+    }
+  }
 
-export default App;
+  render() {
+    return (
+      <section className="app">
+        <Nav />
+        <ContactDash />
+      </section>
+    );
+  }
+}
