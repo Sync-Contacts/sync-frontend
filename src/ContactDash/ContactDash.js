@@ -1,11 +1,12 @@
 import React from 'react';
 import Contact from '../Contact/Contact'
+import "./ContactDash.scss";
 
 const ContactDash = () => {
     return (
-      <main className="ContactDash">
+      <main className="contactdash">
         <h2>To contact this week:</h2>
-        <section className="WeekContact">
+        <section className="weekcontent">
           <Contact />
           <Contact />
           <Contact />
