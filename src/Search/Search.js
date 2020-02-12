@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import "./Search.scss";
+
 export default class Search extends Component {
     constructor() {
         super()
@@ -15,7 +17,7 @@ export default class Search extends Component {
 
     render() {
         return (
-            <section className="Search">
+            <section className="search">
                 <input 
                     type="text"
                     name="search"
