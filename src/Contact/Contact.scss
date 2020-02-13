@@ -1,15 +1,13 @@
 .contact {
-    height: 40%;
-    width: 20%;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
-    margin: 2%;
     border-radius: 10%;
     // transition: box-shadow 4s ease 0s;
-
 
     img {
         height: 40%;
@@ -24,4 +22,11 @@
     //     box-shadow: -9px -9px 16px  rgba(255,255,255, 0.5), 9px 9px 16px rgba(163, 177, 198, 0.6);
     //     transition: box-shadow 4s ease 0s;
     // }
+}
+
+.contact-overflow {
+    height: 80%;
+    width: 20%;
+    flex: 0 0 auto;
+    margin-right: 5%;
 }

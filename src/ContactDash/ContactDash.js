@@ -4,9 +4,12 @@ import "./ContactDash.scss";
 
 const ContactDash = () => {
     return (
-      <main className="contactdash">
+      <main className="contact-dash">
         <h2>To contact this week:</h2>
         <section className="weekcontent">
+          <Contact />
+          <Contact />
+          <Contact />
           <Contact />
           <Contact />
           <Contact />

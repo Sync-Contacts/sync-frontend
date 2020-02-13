@@ -1,9 +1,6 @@
-.contactdash {
+.contact-dash {
     height: 88%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     margin-top: 2%;
 
     h2 {
@@ -13,9 +10,23 @@
 }
 
 .weekcontent {
-    height: 90%;
+    height: 40%;
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #a3b1c699;
+    border-bottom: 1px solid #a3b1c699;
+    overflow: auto;
+
+    // justify-content: space-around;
+    //try to get snap scrolling on contacts 
+    // overflow-x: auto;
+    // overscroll-behavior-x: contain;
+    // scroll-snap-type: x mandatory;
+    // justify-content: space-around;
+
+    // .contact {
+    //     scroll-snap-align: mandatory;
+    // }
 }
