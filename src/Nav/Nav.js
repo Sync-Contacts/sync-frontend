@@ -1,13 +1,14 @@
 import React from "react";
 import Search from '../Search/Search'
 import "./Nav.scss";
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
   return (
     <section className="nav">
         <h1>Sync</h1>
         <Search />
-        <button className="nav-btn-contact">+</button>
+        <NavLink to='/contactDetails' className="nav-btn-contact">+</NavLink>
     </section>
   )
 };
