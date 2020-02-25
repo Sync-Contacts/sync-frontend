@@ -10,12 +10,12 @@ const ContactDetails = () => {
                 <section className="contact-details">
                     <h1>Contact Name</h1>
                     <h2>Date Last Spoke: 11/11/11</h2>
-                    <h4>Contact Frequency</h4>
+                    {/* <h4>Contact Frequency</h4> */}
                     <h3>Phone</h3>
                     <h3>Email</h3>
                     <h3>Address</h3>
                 </section>
-                <h2>Talking Points:</h2>
+                <h2 className="contact-talk-label">Talking Points:</h2>
                 <article className="contact-talk-points">
                     <dl>
                         <dt>Nightshades</dt>

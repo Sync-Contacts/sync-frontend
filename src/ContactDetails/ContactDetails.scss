@@ -11,9 +11,10 @@
     height: 80%;
     width: 80%;
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
-    border-radius: 7%;
+    border-radius: 3%;
     display: flex;
     flex-flow: row wrap;
+    color: #a3b1c699;
 
     img {
         height: 50%;
@@ -27,7 +28,6 @@
 
     h2 {
         font-size: 1.5em;
-        // margin-left: 2%;
     }
 }
 
@@ -37,6 +37,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: #a3b1c699;
 
     h1 {
         font-size: 2em;
@@ -71,6 +72,10 @@
         }
     
     }
+}
+
+.contact-talk-label {
+    margin-left: 2%;
 }
 
 //grid layout the card itself
