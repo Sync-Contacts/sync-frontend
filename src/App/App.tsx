@@ -6,15 +6,23 @@ import ContactDash from '../ContactDash/ContactDash';
 import ContactDetails from '../ContactDetails/ContactDetails';
 import { Route } from 'react-router-dom';
 
-export default class App extends Component {
-  constructor() {
-    super();
+// interface AppProps {
+//   addContact(): void; 
+// }
+
+interface AppState {
+  contacts: object[];
+}
+
+export default class App extends Component<null, AppState> {
+  constructor(props) {
+    super(props);
     this.state = {
       contacts: []
     }
   }
 
-  addContact(contact) {
+  addContact(contact: object): void {
     this.setState({contacts: [...this.state.contacts, contact]})
   }
 
