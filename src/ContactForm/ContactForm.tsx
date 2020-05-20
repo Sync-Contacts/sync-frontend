@@ -2,20 +2,30 @@ import React, { Component } from "react";
 import "./ContactForm.scss";
 import { NavLink } from 'react-router-dom';
 
-export default class ContactForm extends Component {
-  constructor() {
-      super()
-      this.state = {
-          name: '',
-          number: ''
-      }
+interface AppState {
+  name: string,
+  number: string
+}
+
+interface AppProps {
+  addContact(state: AppState): void; 
+}
+
+export default class ContactForm extends Component<AppProps, AppState> {
+  constructor(AppProps) {
+    super(AppProps)
+    this.state = {
+        name: '',
+        number: ''
+    }
   }
 
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value})
+  handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    // modify to reference change event type declaration
+    // this.setState({ [e.target.name as keyof AppState]: e.target.value})
   }
 
-  captureContact = e => {
+  captureContact = (e: any): void  => {
     e.preventDefault();
     this.props.addContact(this.state);
   }
