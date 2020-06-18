@@ -1,6 +1,6 @@
 import React from "react";
-import userImg from "../resource/user.svg";
 import "./Contact.scss";
+import userImg from '../resource/user.svg';
 import { Link } from 'react-router-dom';
 
 const Contact = () => {

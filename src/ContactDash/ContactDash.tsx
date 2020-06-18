@@ -2,6 +2,10 @@ import React from 'react';
 import Contact from '../Contact/Contact'
 import "./ContactDash.scss";
 
+type ContactDashProps = {
+  
+}
+
 const ContactDash = () => {
     return (
       <main className="contact-dash">
