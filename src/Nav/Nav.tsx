@@ -8,7 +8,7 @@ const Nav = () => {
     <section className="nav">
         <h1>Sync</h1>
         <Search />
-        <NavLink to='/contactDetails' className="nav-btn-contact">+</NavLink>
+        <NavLink to='/contactForm' className="nav-btn-contact">+</NavLink>
     </section>
   )
 };
