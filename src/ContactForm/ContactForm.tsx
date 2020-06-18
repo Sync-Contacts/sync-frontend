@@ -12,8 +12,8 @@ interface AppProps {
 }
 
 export default class ContactForm extends Component<AppProps, AppState> {
-  constructor(AppProps) {
-    super(AppProps)
+  constructor(props: AppProps) {
+    super(props)
     this.state = {
         name: '',
         number: ''
