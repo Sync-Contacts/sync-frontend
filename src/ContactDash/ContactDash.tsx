@@ -4,11 +4,17 @@ import "./ContactDash.scss";
 
 const ContactDash = () => {
   //should type this more strictly for each property 
-    interface ContactState {
-      contacts: object[];
-    }
-
+  interface ContactState {
+    contacts: object[];
+  }
   const [contacts, setContacts] = useState<ContactState | undefined>(undefined);
+
+  useEffect(() => {
+    //hardcoded initial test fetch for user 1 
+    fetch('http://localhost:5432/contacts/1')
+      .then(resp => resp.json())
+      .then(data => setContacts(data))
+  }, [])
 
     return (
       <main className="contact-dash">
