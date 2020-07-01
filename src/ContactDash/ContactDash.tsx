@@ -2,6 +2,24 @@ import React, { useState, useEffect } from 'react';
 import Contact from '../Contact/Contact'
 import "./ContactDash.scss";
 
+interface ContactProps {
+  id: number,
+  linked_user_id: number,
+  contact_name: string,
+  phone: string,
+  email: string,
+  contact_address: string,
+  last_contact: string,
+  contact_frq: number
+}
+
+//more explicity interface the contact details
+const createContacts = (contactDetails: object[]) : object[] => {
+  return contactDetails.map(contact => {
+    return <Contact props={contact} />
+  })
+}
+
 const ContactDash = () => {
   //should type this more strictly for each property 
   interface ContactState {
@@ -11,7 +29,7 @@ const ContactDash = () => {
 
   useEffect(() => {
     //hardcoded initial test fetch for user 1 
-    fetch('http://localhost:5432/contacts/1')
+    fetch('http://localhost:3000/contacts/1')
       .then(resp => resp.json())
       .then(data => setContacts(data))
   }, [])
