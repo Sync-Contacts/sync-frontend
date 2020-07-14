@@ -15,8 +15,8 @@ interface ContactProps {
 
 //more explicity interface the contact details
 const createContacts = (contactDetails: object[]) : object[] => {
-  return contactDetails.map(contact => {
-    return <Contact props={contact} />
+  return contactDetails.map((contact: ContactProps) => {
+    return <Contact key={contact.id} {...contact} />
   })
 }
 
